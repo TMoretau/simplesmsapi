@@ -11,6 +11,8 @@
             adipisci cumque! Nisi, repellat excepturi voluptatibus deleniti veritatis
             rerum officia praesentium?
           </p>
+          <b-button variant="outline-light" style="min-width:45%;">Oui</b-button>
+          <b-button variant="outline-light" style="min-width:45%;" class="ml-3">Oui</b-button>
         </b-col>
       </b-row>
     </b-container>
@@ -28,7 +30,6 @@ export default {
 .home {
   position: relative;
   padding: 100px 0 200px 0;
-  min-height: 80vh;
   background: linear-gradient(to right, #2062cd, #4aa5f7);
   color: #FFFFFF;
   overflow: hidden;
@@ -39,7 +40,7 @@ export default {
     position: absolute;
     background: #FFF;
     width: 200%;
-    transform: rotate(-5deg);
+    transform: rotate(-4deg);
     height: 200px;
   }
   h1 {

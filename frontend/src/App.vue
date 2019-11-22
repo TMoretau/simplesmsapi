@@ -1,26 +1,28 @@
 <template>
   <div id="app">
-    <div class="nav">
+    <div class="topnav">
       <b-container>
         <b-row>
           <b-col md="4">
             <router-link :to="{name: 'home'}">
-              <h1 class="nav-title">
+              <h1 class="topnav-title">
                 SimpleSMSAPI<span class="light">.com</span>
               </h1>
             </router-link>
           </b-col>
           <b-col md="8" class="text-right">
-            <div class="nav-item">
+            <div class="topnav-item">
               <router-link :to="{name:'pricing'}">Pricing</router-link>
             </div>
-            <div class="nav-item" v-b-modal.addfunds-modal>
-              <b>Get Started</b>
+            <div class="topnav-item">
+              <router-link :to="{name:'getStarted'}">
+                <b>Get Started</b>
+              </router-link>
             </div>
-            <div class="nav-item">
+            <div class="topnav-item">
               <router-link :to="{name:'documentation'}">Documentation</router-link>
             </div>
-            <div class="nav-item" v-b-modal.addfunds-modal>
+            <div class="topnav-item" v-b-modal.addfunds-modal>
               <b>Add funds</b>
             </div>
             <b-modal
@@ -55,7 +57,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
 }
-.nav {
+.topnav {
   padding: 20px 30px;
   background: linear-gradient(to right, #2062cd, #4aa5f7);
   color: #FFFFFF;

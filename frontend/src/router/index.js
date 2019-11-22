@@ -15,6 +15,11 @@ const routes = [
     name: 'pricing',
     component: () => import('../views/Pricing.vue'),
   },
+  {
+    path: '/get-started',
+    name: 'getStarted',
+    component: () => import('../views/GetStarted.vue'),
+  },
 ];
 
 const router = new VueRouter({
