@@ -7,24 +7,18 @@
           <p>
             <b>SimpleSMSAPI</b> is an easy to use API to send SMS to anywhere in the world.
           </p>
+          <p>
+            We provides a REST API to our customer. It is very simple to use.
+          </p>
           <h3>Examples</h3>
-          <b-tabs>
-            <b-tab title="Command line" active>
-              <p>I'm the first tab</p>
-            </b-tab>
-            <b-tab title="Python">
-              <p>
-                import requests
-resp = requests.post('https://textbelt.com/text', {
-  'phone': '5557727420',
-  'message': 'Hello world',
-  'key': 'textbelt',
-})
-print(resp.json())
-              </p>
-            </b-tab>
-            <b-tab title="Disabled"><p>I'm a disabled tab!</p></b-tab>
-          </b-tabs>
+          <CodeBox method="post" url="/api/sms" language="json">
+<pre>
+{
+  "apiKey": "a1b2c3d4e5f6g7h8j9k0",
+  "phone": "+33123456789",
+  "message": "This is a test message!"
+}</pre>
+          </CodeBox>
         </b-col>
       </b-row>
     </b-container>
@@ -32,9 +26,13 @@ print(resp.json())
 </template>
 
 <script>
-// @ is an alias to /src
+import CodeBox from '@/components/CodeBox.vue';
+
 export default {
   name: 'home',
+  components: {
+    CodeBox,
+  },
 };
 </script>
 
